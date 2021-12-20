@@ -9,18 +9,24 @@
 <body>
     
     <script>
-        // Cuantos caramelos le corresponde a cada chico?
+        // Cuantos caramelos le corresponde a cada chico? (que me devuelva un numero entero)
         const kids = 3;
         const candies = 10;
 
-        console.log(candies / kids);
+        const candiesPerkid = Math.floor(candies / kids);
+        const candiesForParent = candies % kids;
+        console.log(`Cada chico recibe ${candiesPerkid} caramelos`);
+        console.log(`Cada padre recibe ${candiesForParent} caramelo`);
 
 
         
-        const a = 10
-        const b = 20
 
-        console.log( a + b )
+        const a = 10;
+        const b = "20";
+
+        console.log(typeof a);   // typeof que me devuelve el tipo de dato
+        console.log(typeof b); 
+        console.log( a + b );
         
 
         // / -> dividir
