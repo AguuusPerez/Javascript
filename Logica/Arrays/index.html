@@ -9,20 +9,26 @@
 <body>
 
     <script>
-        const person1 = {                     //Objeto
+        const person1 = {                     // Objeto
             name: "Agus",
             surname: "Perez"
-        }
+        };
 
         const person2 = {
             name: "Pau",
             surname: "Rey"
-        }
+        };
         
-        const students = [person1, person2]   //array
+        const students = [person1, person2];   // Array: lista de elementos, lista de cualquier tipo de dato
 
         console.log(students);
-        console.log(students[0]);
+
+        students.push({                       // Agrega de forma dinamica, un objeto a nuestro array
+            name: "Nicolas",
+            surname: "Castro"
+        });
+
+        console.log(students);
 
     </script>
 </body>
