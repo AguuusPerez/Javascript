@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+ <body>
+     <script>
+            const edad1 = 10;
+            const edad2 = 20;
+            const edad3 = 18;
+            const edad4 = 1;
+            const edad5 =58;
+
+            if (edad1 >= 18) {
+                console.log("Edad1 puede entrar")
+            } else {
+                console.log("Edad1 no pued entrar")
+            }
+            
+
+            function checkAge(age) {
+                    if (age >= 18) {
+                    console.log("Puede entrar")
+                } else {
+                    console.log("No puede entrar")
+                }
+            }
+
+
+            checkAge(edad1)
+            checkAge(edad2)
+            checkAge(edad3)
+            checkAge(edad4)
+            checkAge(edad5)
+           
+
+
+            //Comparar dos numeros y saber cual es el mayor 
+
+            const num1 = 10;
+            const num2 = 20;
+
+            if ( num1 > num2 ){
+                console.log("El numero 1 es mas grande")
+            } else if ( num1 < num2 ){
+                console.log("El numero 2 es mas grande")
+            } else {
+                console.log("El numero 1 es igual a numero 2")
+            }
+
+            // Lista del super
+            const objetos = [] // lista vacia
+
+            objetos.push("pepsi")        //agregando
+            objetos.push("mayonesa") 
+
+
+
+            //Hacer una función que devuelva la suma de dos números
+            const numero1 = 5;
+            const numero2 = 10;
+
+            function suma (num1, num2){
+                const sum = num1 + num2 ;
+                console.log(sum);
+            }
+
+            suma(numero1, numero2);
+            
+            //Hacer una función que reciba como parámetro un número e imprima si es par o impar
+            function par(num) {
+                if (num % 2 == 0){
+                    console.log(`El numero ${num} es par`);
+                } else {
+                    console.log(`El numero ${num} es impar`);
+                } 
+            }
+
+            par(numero1)
+
+
+            //Hacer una función que reciba como parámetro un número e imprima verdadero si el número es múltiplo de 3 o 5
+            function multiplo(num) {
+                if (num % 3 == 0 || num % 5 == 0){
+                    console.log("Verdadero");
+                } else {
+                    console.log("Falso");
+                }
+            }
+
+            multiplo(numero2)
+
+            //Crear una función que reciba una variable donde se ingresa el nombre del mes como string y devuelva la cantidad de días correspondiente a ese mes
+            const month = "Abril"
+
+            function diaMes(mes){
+                if (mes == "Enero" || mes == "Marzo" || mes == "Mayo" || mes == "Julio" || mes == "Agosto"  || mes == "Octubre" || mes == "Noviembre" ||mes == "Diciembre" ){
+                    console.log(`El mes ${month} tiene 31 dias`);
+                } else if (mes == "Abril" || mes == "Junio" || mes == "Septiembre" || mes == "Noviembre" ) {
+                    console.log(`El mes ${month} tiene 30 dias`);
+                } else {
+                    console.log(`El mes ${month} tiene 28 dias`);
+                }
+            }
+            
+            diaMes(month)
+     </script>
+ </body>
+</html>
