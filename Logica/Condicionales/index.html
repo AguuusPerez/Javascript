@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+</head>
+<body>
+    <script>
+        const isRaining = true;
+
+        if (isRaining == true){
+            console.log("Agarro un paraguas");
+        } else {
+            console.log("No agarro nada");
+        }
+
+         
+        const age = 17;
+        const havePermission = true; 
+
+        if (age >= 65) {
+            console.log("Soy jubilado");
+        } else if((age >= 18 && age < 65) || havePermission == true){
+            console.log("Soy mayor de edad");
+        } else{
+            console.log("Soy menor de edad")
+        }
+        
+        // && -> Y        
+        // || -> O
+
+
+        const person = {                //obj
+            name: "Agus",
+            surname: "Perez"
+        };
+
+
+        if (person.name == "Agus" && person.surname == "Perez") {
+            console.log("Podes acceder");
+        } else {
+            console.log("Acceso denegado");
+        }
+        
+
+        //Declarar un array con los numeros de 1 al 10 
+        //Crear un condicional que imprima ‘par’ o ‘impar’ según si el numero es par o impar
+
+        const numbers = [1,2,3,4,5,6,7,8,9,10];
+        let number = 2; 
+
+        if (number % 2 == 0 ){
+            console.log("El numero ingresado es par!")
+        } else {
+            console.log("El numero ingresado es impar!")
+        }
+
+        //Crear otro array con los números del 1 al 20
+        //Crear un condicional que imprima solo los múltiplos de 3 o 5
+
+        const moreNumbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+        let otherNumber = 7;
+
+        if (otherNumber % 3 == 0 || otherNumber % 5 == 0){
+            console.log("El numero ingresado es multiplo de 3 o 5");
+        } else {
+            console.log("El numero ingresado no es multiplo de 3 o 5");
+        }
+
+        //Crear otro condicional que solo imprima los números que son múltiplos de 2 y 3 al mismo tiempo
+
+        if (otherNumber % 2 == 0 && otherNumber % 3){
+            console.log("Es multiplo de 2 y 3");
+        } else {
+            console.log("No es multiplo de 2 y 3");
+        }
+
+    </script>
+</body>
+</html>
