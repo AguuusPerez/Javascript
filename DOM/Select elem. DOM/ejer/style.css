@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root{
+    --font:'Outfit', sans-serif;
+    --black:  #0e0f0f;
+    --orange-v:  #e8b14e;
+    --green-v:#75b5b0;
+    --bbpink: #f4deed;
+    --b-pink: #c591ac;
+    --white: #fff;
+}
+
+body{
+    font-family: var(--font);
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-agus{
+    width: 320px;
+    height: 420px;
+    background-color: var(--bbpink);
+    border-radius: 20px; 
+    
+}
+
+.card-agus-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+   
+}
+
+.card-ilustration{
+    width: 180px;
+    height: 180px;
+    border-radius: 200px;
+}
+
+
+
+.card-agus-info{
+    padding-top: 35px;
+}
+
+.title-name{
+    font-size: 30px;
+    text-align: center;
+}
+
+.user-name{
+    font-size: 17px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.card-agus-button{
+    display: flex;
+    align-self: flex-end;
+    padding-top: 40px;
+    
+}
+
+.btn{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--green-v);
+    cursor: pointer;  
+    align-items: flex-end;
+    border-radius: 0 0 20px 20px;
+}
+
+button:hover {
+    background-color: var(--orange-v);
+}
+  
+button:active {
+    background-color: var(--green-v);
+}
+
+.footer { 
+    font-size: 15px;
+    text-align: center; 
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%); 
+}
+
