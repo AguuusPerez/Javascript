@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classlist</title>
+</head>
+<body>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition: 1s all;
+        }
+
+        .bigBox{
+            width: 400px;
+            transition: 1s all;
+        }
+    </style>
+
+
+    <div id="container" class="container"></div>
+
+    <!--<button onclick="toggleBigBox()">Click me!</button>!-->
+    <button onclick="toggleBigBox('add')">Agregar clase</button>
+    <button onclick="toggleBigBox('remove')">Quitar clase</button>
+
+
+    <script>
+       //function toggleBigBox(){
+       //     const container = document.getElementById('container');
+       //   container.classList.toggle('bigBox');
+       //}
+       
+
+       /*function addBigBox() {           
+           container.classList.add('bigBox');
+       }
+
+       function removeBigBox() {
+           container.classList.remove('bigBox');
+       }*/
+
+       const container = document.getElementById('container');
+
+       function toggleBigbox(action) {
+         if (action == 'add'){
+               container.classList.add('bigBox');
+           }else if (action == 'remove'){
+               container.classList.remove('bigBox');
+           } else {
+               console.log("Accion invalida");
+           }            
+       }
+
+    </script>
+</body>
+</html>
